@@ -1,0 +1,47 @@
+import { Flex, Text, Heading, Tag } from "@chakra-ui/react";
+import { Iddetaildoa } from "src/interface";
+import ModalKeterangan from "../modalKeterangan";
+
+const Detail = ({ item }: Iddetaildoa) => {
+  return (
+    <Flex
+      flexDir={"column"}
+      textAlign={"center"}
+      justify={"center"}
+      alignItems={"center"}
+      h={"100vh"}
+    >
+      <Heading>{item.nama}</Heading>
+      {item.keterangan === null ? null : (
+        <ModalKeterangan keterangan={item.keterangan} />
+      )}
+      {item.id_doa === "20" ? (
+        <Text fontSize={"lg"} mt={"2"} letterSpacing={"wide"}>
+          {item.id_doa === "20" ? item.keterangan[0] : null}
+        </Text>
+      ) : null}
+      <Text
+        fontWeight={"extrabold"}
+        mt={"4"}
+        fontSize={"4xl"}
+        letterSpacing={"widest"}
+      >
+        {item.id_doa === "20" ? item.keterangan[1] : item.lafal}
+      </Text>
+      <Text
+        mt={"1"}
+        fontSize={"lg"}
+        fontWeight={"semibold"}
+        letterSpacing={"wide"}
+      >
+        {item.id_doa === "20" ? item.keterangan[2] : item.transliterasi}
+      </Text>
+      <Text fontSize={"lg"} mt={"1"} letterSpacing={"wide"}>
+        <Tag fontWeight={"bold"}>Artinya: </Tag>{" "}
+        {item.id_doa === "20" ? item.keterangan[3] : item.arti}
+      </Text>
+    </Flex>
+  );
+};
+
+export default Detail;
