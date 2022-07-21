@@ -9,7 +9,9 @@ const Detail = ({ item }: IdetailDoa) => {
       textAlign={"center"}
       justify={"center"}
       alignItems={"center"}
-      h={"100vh"}
+      pt={{ base: "10", md: "0" }}
+      h={"full"}
+      minH={"100vh"}
     >
       <Heading>{item.nama}</Heading>
       {item.keterangan === null ? null : (

@@ -1,4 +1,5 @@
 import { Flex, Box, Text, useColorModeValue } from "@chakra-ui/react";
+import Image from "next/image";
 import Option from "../option";
 
 const Navbar = () => {
@@ -17,9 +18,12 @@ const Navbar = () => {
       p={"3"}
       zIndex={"10"}
     >
-      <Text fontWeight={"bold"} fontSize={"2xl"}>
-        Doa Harian
-      </Text>
+      <Flex justify={"center"} alignItems={"center"} gap={"2"}>
+        <Text fontWeight={"bold"} fontSize={"2xl"}>
+          Doa Harian
+        </Text>
+        <Image src="/img/doa-harian.png" width="30px" height="30px" />
+      </Flex>
       <Option />
     </Box>
   );

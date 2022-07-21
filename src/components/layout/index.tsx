@@ -10,7 +10,7 @@ const Layout = ({ children, title }: Ilayout) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <Container maxW={{ base: "full", md: "90%" }}>
+      <Container maxW={{ base: "full", md: "90%" }} py={{ base: "8", lg: "0" }}>
         <Flex justify={"center"} flexDirection={"column"} alignItems={"center"}>
           <Navbar />
           <Box
