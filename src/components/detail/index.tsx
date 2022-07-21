@@ -1,8 +1,8 @@
 import { Flex, Text, Heading, Tag } from "@chakra-ui/react";
-import { Iddetaildoa } from "src/interface";
+import { IdetailDoa } from "src/interface";
 import ModalKeterangan from "../modalKeterangan";
 
-const Detail = ({ item }: Iddetaildoa) => {
+const Detail = ({ item }: IdetailDoa) => {
   return (
     <Flex
       flexDir={"column"}

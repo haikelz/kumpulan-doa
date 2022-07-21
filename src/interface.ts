@@ -15,7 +15,7 @@ export interface Idoa {
     search: string;
 }
 
-export interface Iddetaildoa {
+export interface IdetailDoa {
     item: {
         id_doa: string;
         nama: string;
@@ -60,4 +60,8 @@ export interface Ievent {
     target: {
         value: string;
     }
+}
+
+export interface ImodalKeterangan {
+    keterangan: string[];
 }

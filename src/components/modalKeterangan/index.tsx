@@ -10,8 +10,9 @@ import {
   Button,
   Text,
 } from "@chakra-ui/react";
+import { ImodalKeterangan } from "src/interface";
 
-const ModalKeterangan = ({ keterangan }: any) => {
+const ModalKeterangan = ({ keterangan }: ImodalKeterangan) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
