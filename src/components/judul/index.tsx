@@ -14,7 +14,7 @@ const Judul = () => {
         <Image src="/img/doa-harian.png" width="35px" height="35px" />
       </Flex>
       <Text fontSize={"lg"} fontWeight={"medium"}>
-        Kumpulan doa sehari-hari
+        Kumpulan Doa sehari-hari
       </Text>
     </Box>
   );

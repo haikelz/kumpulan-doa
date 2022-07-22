@@ -1,6 +1,6 @@
 # kumpulan-doa
 
-A Website to get daily pray like **Eat pray**,
+A Website to get daily pray like **Doa sebelum makan, Doa masuk masjid**, etc
 
 # Run this in your local machine
 
