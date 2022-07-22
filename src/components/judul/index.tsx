@@ -11,7 +11,11 @@ const Judul = () => {
     >
       <Flex justify={"center"} alignItems={"center"} gap={"2"}>
         <Heading>Doa Harian</Heading>
-        <Image src="/img/doa-harian.png" width="35px" height="35px" />
+        <Image
+          src="https://raw.githubusercontent.com/haikelz/kumpulan-doa/master/public/img/doa-harian.png"
+          width="35px"
+          height="35px"
+        />
       </Flex>
       <Text fontSize={"lg"} fontWeight={"medium"}>
         Kumpulan Doa sehari-hari

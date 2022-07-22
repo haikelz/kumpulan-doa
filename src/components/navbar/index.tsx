@@ -22,7 +22,12 @@ const Navbar = () => {
         <Text fontWeight={"bold"} fontSize={"2xl"}>
           Doa Harian
         </Text>
-        <Image src="/img/doa-harian.png" width="30px" height="30px" />
+        <Image
+          src="https://raw.githubusercontent.com/haikelz/kumpulan-doa/master/public/img/doa-harian.png"
+          width="30px"
+          height="30px"
+          alt="Logo"
+        />
       </Flex>
       <Option />
     </Box>
