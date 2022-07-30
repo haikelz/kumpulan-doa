@@ -9,7 +9,7 @@ const Detail = ({ item }: IdetailDoa) => {
       textAlign={"center"}
       justify={"center"}
       alignItems={"center"}
-      pt={{ base: "10", md: "0" }}
+      py={{ base: "4", md: "0" }}
       h={"full"}
       minH={"100vh"}
     >

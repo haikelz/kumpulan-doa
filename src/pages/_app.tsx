@@ -1,13 +1,17 @@
 import type { AppProps } from "next/app";
-import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "../styles/font.css";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
+  const queryClient: QueryClient = new QueryClient();
+
   return (
-    <ChakraProvider>
-      <ColorModeScript initialColorMode="light" />
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <QueryClientProvider client={queryClient}>
+      <ChakraProvider>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </QueryClientProvider>
   );
 };
 

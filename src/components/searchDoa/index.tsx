@@ -8,8 +8,8 @@ const SearchDoa = ({ setSearch }: Isearch) => {
 
   return (
     <Input
-      mt={{ base: "14", md: 4 }}
-      mb={"4"}
+      mt={"4"}
+      mb={"2"}
       type={"text"}
       placeholder={"Cari Doa...."}
       maxW={{ base: "full", md: "50%" }}

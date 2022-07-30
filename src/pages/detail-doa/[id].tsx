@@ -30,7 +30,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context: Icontext) => {
   try {
-    const id = context.params.id;
+    const id: string = context.params.id;
     const response: AxiosResponse = await axios({
       method: "get",
       url: `https://tanyadoa-api.herokuapp.com/show/${id}`,

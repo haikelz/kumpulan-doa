@@ -11,7 +11,6 @@ const Navbar = () => {
       w={"full"}
       top={"0"}
       bg={bg}
-      position={"fixed"}
       h={"14"}
       justifyContent={"space-between"}
       alignItems={"center"}

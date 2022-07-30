@@ -34,7 +34,7 @@ export interface Iitem {
         lafal: string;
         transliterasi: string;
         arti: string;
-    }
+    };
 }
 
 export interface Ilayout {

@@ -5,6 +5,7 @@ import Link from "next/link";
 
 const DoaCard = ({ doa, search }: Idoa) => {
   const bg = useColorModeValue("blue.400", "blue.500");
+
   return (
     <>
       {doa

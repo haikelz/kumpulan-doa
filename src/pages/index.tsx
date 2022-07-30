@@ -1,13 +1,12 @@
 import { memo, useState } from "react";
 import { Flex, Grid } from "@chakra-ui/react";
-import { Idoa } from "../interface";
+import { Idoa } from "src/interface";
 import axios, { AxiosResponse } from "axios";
 import Layout from "../components/layout";
 import DoaCard from "../components/doaCard";
 import Judul from "../components/judul";
 import SearchDoa from "src/components/searchDoa";
 
-// fecth API dengan axios
 export const getStaticProps = async () => {
   try {
     const response: AxiosResponse = await axios({
