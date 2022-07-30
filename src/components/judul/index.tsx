@@ -15,6 +15,7 @@ const Judul = () => {
           src="https://raw.githubusercontent.com/haikelz/kumpulan-doa/master/public/img/doa-harian.png"
           width="35px"
           height="35px"
+          alt="Logo"
         />
       </Flex>
       <Text fontSize={"lg"} fontWeight={"medium"}>
