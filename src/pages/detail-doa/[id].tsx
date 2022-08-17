@@ -1,6 +1,6 @@
+import { LINK_DETAIL_DOA, LINK_LIST_DOA } from "src/utils/data";
 import { memo } from "react";
-import { Icontext, Idetail, Idoa } from "src/interface";
-import axios, { AxiosResponse } from "axios";
+import { Context, DetailPaths, Doa } from "src/interface";
 import NextButton from "src/components/nextButton";
 import PreviousButton from "src/components/previousButton";
 import Layout from "src/components/layout";
@@ -8,12 +8,10 @@ import Detail from "src/components/detail";
 
 export const getStaticPaths = async () => {
   try {
-    const response: AxiosResponse = await axios({
-      url: "https://tanyadoa-api.herokuapp.com/all",
-      method: "get",
-    });
+    const response: Response = await fetch(LINK_LIST_DOA);
+    const data = await response.json();
 
-    const paths = response.data.data.map((detail: Idetail) => {
+    const paths = data.data.map((detail: DetailPaths) => {
       return {
         params: { id: detail.id_doa },
       };
@@ -28,17 +26,15 @@ export const getStaticPaths = async () => {
   }
 };
 
-export const getStaticProps = async (context: Icontext) => {
+export const getStaticProps = async (context: Context) => {
   try {
     const id: string = context.params.id;
-    const response: AxiosResponse = await axios({
-      method: "get",
-      url: `https://tanyadoa-api.herokuapp.com/show/${id}`,
-    });
+    const response: Response = await fetch(`${LINK_DETAIL_DOA}/${id}`);
+    const data = await response.json();
 
     return {
       props: {
-        doa: response.data.data,
+        doa: data.data,
       },
     };
   } catch (err) {
@@ -46,7 +42,7 @@ export const getStaticProps = async (context: Icontext) => {
   }
 };
 
-const DetailDoa = ({ doa }: Idoa) => {
+const DetailDoa = ({ doa }: Doa) => {
   return (
     <>
       {doa.map((item) => (

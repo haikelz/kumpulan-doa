@@ -8,17 +8,17 @@ const Navbar = () => {
   return (
     <Box
       display={{ base: "flex", md: "none" }}
-      w={"full"}
-      top={"0"}
+      w="full"
+      top="0"
       bg={bg}
-      h={"14"}
-      justifyContent={"space-between"}
-      alignItems={"center"}
-      p={"3"}
-      zIndex={"10"}
+      h="14"
+      justifyContent="space-between"
+      alignItems="center"
+      p="3"
+      zIndex="10"
     >
-      <Flex justify={"center"} alignItems={"center"} gap={"2"}>
-        <Text fontWeight={"bold"} fontSize={"2xl"}>
+      <Flex justify="center" alignItems="center" gap="2">
+        <Text fontWeight="bold" fontSize="2xl">
           Doa Harian
         </Text>
         <Image
@@ -26,6 +26,7 @@ const Navbar = () => {
           width="30px"
           height="30px"
           alt="Logo"
+          priority
         />
       </Flex>
       <Option />

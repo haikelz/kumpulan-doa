@@ -1,17 +1,19 @@
 import { Input } from "@chakra-ui/react";
-import { Ievent, Isearch } from "src/interface";
+import { Event, Search } from "src/interface";
 
-const SearchDoa = ({ setSearch }: Isearch) => {
-  const handleSearch = (event: Ievent) => {
+type HandleSearch = (event: Event) => void;
+
+const SearchDoa = ({ setSearch }: Search) => {
+  const handleSearch: HandleSearch = (event) => {
     setSearch(event.target.value);
   };
 
   return (
     <Input
-      mt={"4"}
-      mb={"2"}
-      type={"text"}
-      placeholder={"Cari Doa...."}
+      mt="4"
+      mb="2"
+      type="text"
+      placeholder="Cari Doa...."
       maxW={{ base: "full", md: "50%" }}
       onChange={handleSearch}
     />

@@ -24,7 +24,7 @@ const Option = () => {
   const bg: string | string = useColorModeValue("gray.200", "gray.700");
 
   return (
-    <Box right={"0"} top={"0"} zIndex={"10"}>
+    <Box right="0" top="0" zIndex="10">
       <Menu>
         <MenuButton
           bg={bg}
@@ -38,7 +38,7 @@ const Option = () => {
         <MenuList>
           <Link href="/" passHref>
             <MenuItem>
-              <Flex justify={"center"} alignItems={"center"} gap={"3"}>
+              <Flex justify="center" alignItems="center" gap="3">
                 <RepeatClockIcon />
                 <Text>Home</Text>
               </Flex>
@@ -46,12 +46,12 @@ const Option = () => {
           </Link>
           <MenuItem onClick={toggleColorMode}>
             {isDarkMode ? (
-              <Flex justify={"center"} alignItems={"center"} gap={"3"}>
+              <Flex justify="center" alignItems="center" gap="3">
                 <SunIcon />
                 <Text>Light Mode</Text>
               </Flex>
             ) : (
-              <Flex justify={"center"} alignItems={"center"} gap={"3"}>
+              <Flex justify="center" alignItems="center" gap="3">
                 <MoonIcon />
                 <Text>Dark Mode</Text>
               </Flex>
@@ -62,5 +62,4 @@ const Option = () => {
     </Box>
   );
 };
-
 export default Option;

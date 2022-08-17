@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export interface Idoa {
+export interface Doa {
     doa: [
         {
             id_doa: string;
@@ -15,7 +15,7 @@ export interface Idoa {
     search: string;
 }
 
-export interface IdetailDoa {
+export interface DetailDoa {
     item: {
         id_doa: string;
         nama: string;
@@ -27,7 +27,7 @@ export interface IdetailDoa {
     }
 }
 
-export interface Iitem {
+export interface Item {
     item: {
         id_doa: string;
         nama: string;
@@ -37,31 +37,31 @@ export interface Iitem {
     };
 }
 
-export interface Ilayout {
+export interface Layout {
     children: ReactNode[] | JSX.Element;
     title: string;
 }
 
-export interface Idetail {
+export interface DetailPaths {
     id_doa: string;
 }
 
-export interface Icontext {
+export interface Context {
     params: {
         id: string;
     }
 }
 
-export interface Isearch {
+export interface Search {
     setSearch: (value: string) => void;
 }
 
-export interface Ievent {
+export interface Event {
     target: {
         value: string;
     }
 }
 
-export interface ImodalKeterangan {
+export interface ModalKeterangan {
     keterangan: string[];
 }

@@ -7,7 +7,7 @@ specifiers:
   '@chakra-ui/system': ^2.2.2
   '@emotion/react': ^11
   '@emotion/styled': ^11
-  '@tanstack/react-query': ^4.0.10
+  '@tanstack/react-query': ^4.1.3
   '@types/node': 18.0.6
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
@@ -30,7 +30,7 @@ dependencies:
   '@chakra-ui/system': 2.2.2_fdnqutfacy7v3gmlcm66flps3q
   '@emotion/react': 11.9.3_szkdlbnthht4v3jvm76fn7u6na
   '@emotion/styled': 11.9.3_y2x62d5bbinncmisoeyv36jqse
-  '@tanstack/react-query': 4.0.10_biqbaboplfbrettd7655fr4n2y
+  '@tanstack/react-query': 4.1.3_biqbaboplfbrettd7655fr4n2y
   axios: 0.27.2
   framer-motion: 6.5.1_biqbaboplfbrettd7655fr4n2y
   jotai: 1.7.6_lxeixztqul6ae7cp3cpkyxlhzm
@@ -1492,8 +1492,8 @@ packages:
     resolution: {integrity: sha512-9LsABpZXkWZHi4P1ozRETEDXQocLAxVzQaIhganxbNuz/uA3PsCAJxJTiQrknG5htLMzOF5MqM9G10e6DCxV1A==}
     dev: false
 
-  /@tanstack/react-query/4.0.10_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-Wn5QhZUE5wvr6rGClV7KeQIUsdTmYR9mgmMZen7DSRWauHW2UTynFg3Kkf6pw+XlxxOLsyLWwz/Q6q1lSpM3TQ==}
+  /@tanstack/react-query/4.1.3_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-BHI/dV3LOuVOZAaifM6u680Wi5rmiHu4aD3WkvrQT/9fYhHDhTzMdJO8l2Xh0UR7JhM8e9O3f89SJhD3T8Ejgw==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
